@@ -1,7 +1,28 @@
+// * Fonts
+@font-face {
+  font-family: "D-DIN-Bold";
+  src: url(../fonts/brandon-black.otf);
+}
+@font-face {
+  font-family: "D-DIN-Light";
+  src: url(../fonts/brandon-light.otf);
+}
+
+// ? For font weight use this names:
+// ? Bold font: "D-DIM-Bold" , Light font: "D-DIM-Light".
+
+// ! Global styles
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: "D-DIN-Light", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.row {
+  width: 100%;
+  display: flex;
 }
