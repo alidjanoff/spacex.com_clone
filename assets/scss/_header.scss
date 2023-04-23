@@ -1,42 +1,268 @@
+@import "./mixins";
+
+// ! Start Header
 .header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 99;
+  width: 100%;
+  height: 90px;
   .row {
-    .logo {
-      a {
-        display: inline-block;
-        width: 210px;
-        height: 26px;
-        line-height: 1.4;
-        font: 14px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
-        font-weight: 400;
-        font-weight: 500;
-        font-style: normal;
-        color: #fff;
-        text-transform: uppercase;
-
-        // Burdan davam et
-
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background: #fff;
-          transform: scaleX(0);
-          transform-origin: right center;
-          transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .headerContainer {
+      max-width: 1400px;
+      margin-left: 200px;
+      display: flex;
+      align-items: flex-end;
+      .logo {
+        margin-right: 40px;
+        a {
+          display: inline-block;
+          width: 210px;
+          height: 26px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
-        img {
+      }
+      .navBar {
+        .navList {
           width: 100%;
-          height: 100%;
-          object-fit: contain;
+          display: flex;
+          font-size: 14px;
+          gap: 24px;
+          .navItem {
+            a {
+              @include navLinkHover();
+            }
+          }
+        }
+      }
+    }
+    .userArea {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-right: 35px;
+      margin-top: 15px;
+      a {
+        @include navLinkHover();
+      }
+      .hamburger {
+        width: 16px;
+        height: 16px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        .bar {
+          display: inline-block;
+          height: 2px;
+          width: 100%;
+          background-color: #fff;
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform-origin: center center;
+          transition: opacity 0.2s linear 0.1s;
+          transition: 0.2s ease;
+          &.top {
+            top: 3px;
+          }
+          &.middle {
+            top: 7px;
+          }
+          &.bottom {
+            top: 11px;
+          }
+        }
+        &.active {
+          z-index: 102;
+          .top {
+            transform: rotate(45deg);
+            left: 0;
+            top: 6px;
+          }
+          .middle {
+            opacity: 0;
+          }
+          .bottom {
+            transform: rotate(-45deg);
+            left: 0;
+            top: 6px;
+          }
+        }
+      }
+    }
+  }
+  .menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    transition: opacity 0.3s linear 0.1s;
+    transition: 0.3s cubic-bezier(0.19, 0.4, 0.23, 0.81);
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .burgerMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 350px;
+    height: 100vh;
+    background-color: #000;
+    z-index: 101;
+    padding: 75px 50px 0 50px;
+    transform: translateX(400px);
+    transition: opacity 0.6s cubic-bezier(0.19, 0.4, 0.23, 0.81) 0.3s;
+    transition: 0.6s cubic-bezier(0.19, 0.4, 0.23, 0.81);
+    &.active {
+      transform: translateX(0);
+    }
+    .menuList {
+      .menuItem {
+        text-align: right;
+        transform: translateY(-100px);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s linear 0.1s;
+        transition: 0.3s cubic-bezier(0.19, 0.4, 0.23, 0.81);
+        &.active {
+          transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
+        }
+        a {
+          padding: 10px 0;
+          display: block;
+          font-family: sans-serif;
+          font-weight: 500;
+          color: #fff;
+          text-transform: uppercase;
+          border-bottom: 1pt solid #252525;
+          font-size: 14px;
+          line-height: 1.4;
+        }
+        &.mobileNavItem {
+          display: none;
         }
       }
     }
   }
 }
+// ! End Header
+
+// * Start Header Medias
+@media (max-width: 1354px) {
+  .header {
+    .row {
+      .headerContainer {
+        margin-left: 50px;
+        .logo {
+          margin-right: 40px;
+        }
+        .navBar {
+          .navList {
+            gap: 24px;
+          }
+        }
+      }
+      .userArea {
+        gap: 30px;
+        margin-right: 35px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1205px) {
+  .header {
+    .row {
+      .headerContainer {
+        .logo {
+          margin-right: 0;
+        }
+        .navBar {
+          .navList {
+            gap: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    height: 60px;
+    .row {
+      .headerContainer {
+        margin: 0 auto;
+        .logo {
+          margin: 0;
+          z-index: 102;
+          a {
+            width: 150px;
+            height: 18px;
+          }
+        }
+        .navBar {
+          display: none;
+        }
+      }
+      .userArea {
+        margin-right: 0;
+        margin-top: 0;
+        position: absolute;
+        right: 35px;
+        z-index: 103;
+        a {
+          display: none;
+        }
+      }
+    }
+    .burgerMenu {
+      .menuList {
+        .menuItem {
+          &.mobileNavItem {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    .burgerMenu {
+      width: 290px;
+      padding: 50px 20px 0 0;
+      .menuList {
+        .menuItem {
+          &.mobileNavItem {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+// * End Header Medias
