@@ -1,12 +1,13 @@
+// ? Sadiq
+
 .home {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../images/home_bg.jpeg);
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  .row {
+    width: 100%;
+    height: 850px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
