@@ -293,15 +293,97 @@
     display: block;
   }
 }
-.home {
+.footer {
   width: 100%;
-  height: 100vh;
-  background-image: url(../images/home_bg.jpeg);
-  position: absolute;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #979797;
+  padding: 20px 0;
   background-color: #000;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 1.75;
+}
+.footer span {
+  margin: 0 20px;
+}
+.footer .socialsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.footer .socialsList .socialsItem {
+  margin: 0 20px;
+}
+.footer .socialsList .socialsItem a {
+  color: #fff;
+  transition: color 1s cubic-bezier(0.25, 1, 0.25, 1), background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
+}
+.footer .socialsList .socialsItem a:hover {
+  color: #8b939b;
+}
+
+.home .row {
+  width: 100%;
+  height: 850px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.falcon9 .row {
+  width: 100%;
+  height: 850px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.falconHeavy .row {
+  width: 100%;
+  height: 850px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dragon .row {
+  width: 100%;
+  height: 850px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starship .row {
+  width: 100%;
+  height: 850px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starshield .row {
+  width: 100%;
+  height: 850px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */

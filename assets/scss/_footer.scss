@@ -1,0 +1,37 @@
+// * Start Footer
+.footer {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #979797;
+  padding: 20px 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 1.75;
+  span {
+    margin: 0 20px;
+  }
+  .socialsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    .socialsItem {
+      margin: 0 20px;
+      a {
+        color: #fff;
+        transition: color 1s cubic-bezier(0.25, 1, 0.25, 1),
+          background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
+        &:hover {
+          color: #8b939b;
+        }
+      }
+    }
+  }
+}
+// * End Footer
