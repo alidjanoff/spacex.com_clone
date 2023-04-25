@@ -368,14 +368,33 @@
   justify-content: center;
 }
 
+.starship {
+  background-image: url(../images/Starhip_website-crop20230126_dji_0199_01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .starship .row {
-  width: 100%;
   height: 850px;
-  background-color: #000;
-  color: #fff;
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+.starship .row .titleHome {
+  text-align: center;
+}
+.starship .row .titleHome h1 {
+  color: white;
+  letter-spacing: -1px;
+  font-weight: 400;
+  font-size: 100px;
+  margin: auto;
+  font-family: "D-DIN-Bold";
+}
+.starship .row .titleHome h3 {
+  color: white;
+  font: 20px/32px D-DIN-Medium, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .starshield .row {
