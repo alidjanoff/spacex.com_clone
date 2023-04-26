@@ -328,16 +328,139 @@
   color: #8b939b;
 }
 
-.home .row {
+.flight-test,
+.americas-mission,
+.starlink-mission,
+.return-earth,
+.starship-selected {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   width: 100%;
-  height: 850px;
-  background-color: #000;
+  height: 100vh;
   color: #fff;
+}
+.flight-test .container,
+.americas-mission .container,
+.starlink-mission .container,
+.return-earth .container,
+.starship-selected .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.flight-test .container .row,
+.americas-mission .container .row,
+.starlink-mission .container .row,
+.return-earth .container .row,
+.starship-selected .container .row {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.flight-test .container .row .info,
+.americas-mission .container .row .info,
+.starlink-mission .container .row .info,
+.return-earth .container .row .info,
+.starship-selected .container .row .info {
+  max-width: 520px;
+  text-transform: uppercase;
+}
+.flight-test .container .row .info .text,
+.americas-mission .container .row .info .text,
+.starlink-mission .container .row .info .text,
+.return-earth .container .row .info .text,
+.starship-selected .container .row .info .text {
+  font-size: 20px;
+  font-weight: 400;
+}
+.flight-test .container .row .info .title,
+.americas-mission .container .row .info .title,
+.starlink-mission .container .row .info .title,
+.return-earth .container .row .info .title,
+.starship-selected .container .row .info .title {
+  font-family: "D-DIN-Bold";
+  font-size: 44px;
+  line-height: 48px;
+  text-shadow: 0 0 2px #555;
+  margin-right: 52px;
+}
+.flight-test .container .row .info .btn,
+.americas-mission .container .row .info .btn,
+.starlink-mission .container .row .info .btn,
+.return-earth .container .row .info .btn,
+.starship-selected .container .row .info .btn {
+  margin-top: 30px;
+}
+.flight-test .container .row .info .btn a,
+.americas-mission .container .row .info .btn a,
+.starlink-mission .container .row .info .btn a,
+.return-earth .container .row .info .btn a,
+.starship-selected .container .row .info .btn a {
+  font-size: 13px;
+  color: #fff;
+  font-family: "D-DIN-Bold";
+  border: 2px solid #fff;
+  display: inline-block;
+  min-width: 130px;
+  padding: 15px 48px;
+}
+.flight-test .container .row .anime,
+.americas-mission .container .row .anime,
+.starlink-mission .container .row .anime,
+.return-earth .container .row .anime,
+.starship-selected .container .row .anime {
+  width: 100%;
+  display: flex;
   justify-content: center;
+  position: relative;
+  margin: 40px 0;
+}
+.flight-test .container .row .anime i,
+.americas-mission .container .row .anime i,
+.starlink-mission .container .row .anime i,
+.return-earth .container .row .anime i,
+.starship-selected .container .row .anime i {
+  font-size: 22px;
+  position: absolute;
+  animation: move 2.5s infinite;
 }
 
+.flight-test {
+  background-image: url(../images/home/home_bg.jpeg);
+}
+
+.americas-mission {
+  background-image: url(../images/home/americas-bg.jpg);
+}
+
+.starlink-mission {
+  background-image: url(../images/home/starlink-mission-bg.jpg);
+}
+
+.return-earth {
+  background-image: url(../images/home/return-earth-bg.png);
+}
+
+.starship-selected {
+  background-image: url(../images/home//starship-select-bg.webp);
+}
+
+@keyframes move {
+  0% {
+    top: -40px;
+    opacity: 1;
+  }
+  50% {
+    top: -20px;
+    opacity: 0;
+  }
+  100% {
+    top: -40px;
+    opacity: 0;
+  }
+}
 .falcon9 .row {
   width: 100%;
   height: 850px;

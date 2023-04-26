@@ -1,13 +1,91 @@
-// ? Sadiq
-
-.home {
-  .row {
-    width: 100%;
-    height: 850px;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.flight-test,
+.americas-mission,
+.starlink-mission,
+.return-earth,
+.starship-selected {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    .row {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      .info {
+        max-width: 520px;
+        text-transform: uppercase;
+        .text {
+          font-size: 20px;
+          font-weight: 400;
+        }
+        .title {
+          font-family: "D-DIN-Bold";
+          font-size: 44px;
+          line-height: 48px;
+          text-shadow: 0 0 2px #555;
+          margin-right: 52px;
+        }
+        .btn {
+          margin-top: 30px;
+          a {
+            font-size: 13px;
+            color: #fff;
+            font-family: "D-DIN-Bold";
+            border: 2px solid #fff;
+            display: inline-block;
+            min-width: 130px;
+            padding: 15px 48px;
+          }
+        }
+      }
+      .anime {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 40px 0;
+        i {
+          font-size: 22px;
+          position: absolute;
+          animation: move 2.5s infinite;
+        }
+      }
+    }
+  }
+}
+.flight-test {
+  background-image: url(../images/home/home_bg.jpeg);
+}
+.americas-mission {
+  background-image: url(../images/home/americas-bg.jpg);
+}
+.starlink-mission {
+  background-image: url(../images/home/starlink-mission-bg.jpg);
+}
+.return-earth {
+  background-image: url(../images/home/return-earth-bg.png);
+}
+.starship-selected {
+  background-image: url(../images/home//starship-select-bg.webp);
+}
+@keyframes move {
+  0% {
+    top: -40px;
+    opacity: 1;
+  }
+  50% {
+    top: -20px;
+    opacity: 0;
+  }
+  100% {
+    top: -40px;
+    opacity: 0;
   }
 }
