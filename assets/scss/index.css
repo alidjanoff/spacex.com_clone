@@ -607,4 +607,101 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.viasat-3-img {
+  background-image: url(../images/americas-mission/missions.jpg);
+}
+
+.general-info {
+  background-color: #000;
+  color: #fff;
+}
+.general-info .container .row {
+  flex-direction: column;
+  align-items: center;
+}
+.general-info .container .row .info {
+  margin: 75px 0;
+  max-width: 960px;
+}
+.general-info .container .row .info .text {
+  max-width: 80%;
+  margin: 20px auto 15px;
+  line-height: 1.6;
+}
+
+.countdown,
+.launch-deployment {
+  background-color: #000;
+  color: #fff;
+}
+.countdown .container,
+.launch-deployment .container {
+  max-width: 1400px;
+  margin: 0 200px;
+}
+.countdown .container .row,
+.launch-deployment .container .row {
+  flex-direction: column;
+}
+.countdown .container .row .title,
+.launch-deployment .container .row .title {
+  font-size: 46px;
+  font-family: "D-DIN-Bold";
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.countdown .container .row .info,
+.launch-deployment .container .row .info {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 20px 0 15px;
+}
+.countdown .container .row .out-timer,
+.launch-deployment .container .row .out-timer {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 20px 0;
+}
+.countdown .container .row .out-timer tbody tr .table-title,
+.launch-deployment .container .row .out-timer tbody tr .table-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "D-DIN-Bold";
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+.countdown .container .row .out-timer tbody tr td,
+.launch-deployment .container .row .out-timer tbody tr td {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 25px 5px 15px;
+  text-align: left;
+  color: #868686;
+  border-bottom: 1pt solid rgba(255, 255, 255, 0.3);
+}
+.countdown .container .row .out-timer tbody tr .right,
+.launch-deployment .container .row .out-timer tbody tr .right {
+  font-size: 17px;
+  color: #fff;
+  font-family: "D-DIN-Bold";
+}
+
+.static {
+  background-color: #000;
+}
+.static .container {
+  max-width: 1400px;
+  margin: 0 200px;
+}
+.static .container .static-img {
+  width: 100%;
+  height: 100vh;
+}
+.static .container .static-img img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */
