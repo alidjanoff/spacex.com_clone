@@ -94,3 +94,86 @@
     }
   }
 }
+// * Start Home Medias
+@media (max-width: 1354px) {
+  .countdown,
+  .launch-deployment {
+    background-color: #000;
+    color: #fff;
+    .container {
+      margin: 0 50px;
+    }
+  }
+}
+
+@media (max-width: 1205px) {
+  // Start Countdown
+  .countdown,
+  .launch-deployment {
+    .container {
+      .row {
+        .title {
+          font-size: 36px;
+        }
+        .info {
+          font-size: 14px;
+          text-transform: uppercase;
+          margin: 20px 0 15px;
+        }
+        .out-timer {
+          border-collapse: collapse;
+          border-spacing: 0;
+          margin: 20px 0;
+          tbody {
+            tr {
+              .table-title {
+                font-size: 14px;
+              }
+              td {
+                font-size: 12px;
+              }
+              .right {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  // Start General Info
+  .general-info {
+    .container {
+      margin: 0;
+      .row {
+        .info {
+          .text {
+            max-width: 100%;
+            padding: 0 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  // Start Countdown
+  .countdown,
+  .launch-deployment {
+    .container {
+      margin: 0;
+      .row {
+        padding: 0 15px;
+        .title {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+// * End Home Medias
