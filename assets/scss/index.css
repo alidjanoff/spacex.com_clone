@@ -886,4 +886,128 @@
 .test .container .row .up .spacex-video iframe {
   width: 100%;
   height: 100%;
+}
+
+.updates {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  background-image: url(../images/starship-selected/Updates_Header.jpg);
+}
+.updates .container {
+  max-width: 1400px;
+  margin: 0 200px;
+}
+.updates .container .row {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.updates .container .row .info {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.updates .container .row .info .title {
+  font-family: "D-DIN-Bold";
+  color: #fff;
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 48px;
+  text-shadow: 0 0 2px #555;
+}
+.updates .anime {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  animation: move 2.5s infinite;
+}
+.updates .anime i {
+  font-size: 22px;
+}
+
+.general-information {
+  background-color: #000;
+  color: #fff;
+}
+.general-information .container {
+  max-width: 1400px;
+  margin: 0 200px;
+}
+.general-information .container .row {
+  flex-direction: column;
+}
+.general-information .container .row .part .spacex-img {
+  margin: 75px 0;
+  width: 100%;
+  height: 100%;
+}
+.general-information .container .row .part .spacex-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.general-information .container .row .part .time {
+  margin-top: 70px;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.general-information .container .row .part .title {
+  margin: 25px 0 50px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "D-DIN-Bold";
+}
+.general-information .container .row .part .info {
+  border-bottom: 2px solid #fff;
+}
+.general-information .container .row .part .info p {
+  margin: 25px 0;
+  line-height: 1.6;
+}
+
+@keyframes move {
+  0% {
+    bottom: 10px;
+    opacity: 1;
+  }
+  50% {
+    bottom: -5px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 10px;
+    opacity: 0;
+  }
+}
+@media (max-width: 1354px) {
+  .updates .container {
+    margin: 0 50px;
+  }
+  .general-information .container {
+    margin: 0 50px;
+  }
+}
+@media (max-width: 960px) {
+  .updates .container {
+    margin: 0;
+    padding: 0 15px;
+  }
+  .updates .container .row .info .title {
+    font-size: 50px;
+  }
+  .general-information .container {
+    margin: 0;
+    padding: 0 15px;
+  }
 }/*# sourceMappingURL=index.css.map */
