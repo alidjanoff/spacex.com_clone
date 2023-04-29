@@ -1,14 +1,524 @@
-// ? Nicat
-
 .falcon9 {
-    .row {
-      width: 100%;
-      height: 850px;
-      background-color: #000;
-      color: #fff;
+  background-image: url(../images/f9_feature.jpg);
+  height: 100%;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  .row {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .pageTitle {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: #fff;
+      h1 {
+        font: 100px/85px D-DIN-Bold, Arial, Verdana, sans-serif;
+      }
+      p {
+        font: 20px/32px D-DIN-Medium, Arial, Verdana, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
     }
   }
-  
+}
+//  Start Falcon 9 About1 Section
+.about1 {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+  display: block;
+  width: 100%;
+  .container {
+    .row {
+      margin: 0 auto;
+      width: 70%;
+      .cardBox {
+        width: 90%;
+        height: auto;
+        margin: 75px auto;
+        max-width: 960px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        .card {
+          width: 30%;
+          vertical-align: top;
+          margin: 0 1%;
+          height: auto;
+          display: inline-block;
+          .number {
+            display: block;
+            font: 140px/140px D-DIN-Light, Arial, Verdana, sans-serif;
+            color: #fff;
+          }
+          .cardInfo {
+            display: block;
+            font: 22px/32px D-DIN-Medium, Arial, Verdana, sans-serif;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+//  End Falcon 9 About Section
+
+// Start Falcon 9 About2 Section
+.about2 {
+  background-image: url(../images/Falcon\ 9\ Rocket.png);
+  height: 714px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  .container {
+    .row {
+      .leftSide {
+        max-width: 520px;
+        left: 50%;
+        margin-top: 265px;
+        margin-left: 40px;
+        .leftSideInfo {
+          font: 20px/38px D-DIN-Medium, Arial, Verdana, sans-serif;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// End Falcon 9 About2 Section
+
+// Start Owerview Section
+.owerview {
+  background-image: url(../images/WebsiteF9Fairings_Render_Desktop.jpg);
+  height: 714px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  .container {
+    .row {
+      .owervievLeftSide {
+        width: 520px;
+        left: 50%;
+        margin-top: 121px;
+        margin-left: 40px;
+        p,
+        h2,
+        td,
+        span {
+          color: #fff;
+        }
+        h2 {
+          font: 20px/32px D-DIN-Medium, Arial, Verdana, sans-serif;
+        }
+        p {
+          font: 46px/50px D-DIN-Bold, Arial, Verdana, sans-serif;
+          max-width: 90%;
+          margin-left: 0;
+          font-size: 48px;
+          line-height: 48px;
+        }
+        table {
+          width: 100%;
+          margin-top: 30px;
+          border-collapse: collapse;
+          tbody {
+            tr {
+              td {
+                font: 14px/18px D-DIN-Bold, Arial, Verdana, sans-serif;
+                text-align: left;
+                padding: 20px 0;
+                border-bottom: 1pt solid rgba(255, 255, 255, 0.3);
+              }
+            }
+          }
+          .properties {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Owerview Section
+// Start Video Section
+.video {
+  background-image: url(../images/f9_video.jpg);
+  height: 100%;
+  text-align: center;
+  height: 714px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  &:hover .fa-play {
+    font-size: 35px;
+  }
+  .container {
+    position: relative;
+    .row {
+      .videoBtn {
+        a {
+          i {
+            font-size: 50px;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+          }
+        }
+      }
+      .videoLeftSide {
+        color: #fff;
+        text-align: left;
+        position: absolute;
+        bottom: 15%;
+        left: 50px;
+        h3 {
+          font: 15px/20px D-DIN-Bold, Arial, Verdana, sans-serif;
+        }
+        p {
+          font: 46px/50px D-DIN-Bold, Arial, Verdana, sans-serif;
+        }
+      }
+    }
+  }
+}
+
+// End Video Section
+
+// Start Engine Section
+.engine {
+  background-image: url(../images/Merlin.jpg);
+  height: 714px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  .container {
+    position: relative;
+    .row {
+      .engineLeftSide {
+        text-align: left;
+        width: 50%;
+        max-width: 520px;
+        position: absolute;
+        top: 13%;
+        left: 50px;
+        h3,
+        .engineTitle,
+        td {
+          color: #fff;
+        }
+        h3 {
+          font: 15px/20px D-DIN-Bold, Arial, Verdana, sans-serif;
+        }
+        .engineTitle {
+          font: 46px/50px D-DIN-Bold, Arial, Verdana, sans-serif;
+        }
+        .engineBtn {
+          a {
+            display: inline-block;
+            margin: 50px 0 30px;
+            color: rgba(255, 255, 255, 0.5);
+          }
+          .engineBtn1 {
+            color: #fff;
+          }
+          span {
+            padding: 0 10px;
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+        .engineInfo {
+          margin-top: 20px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+        table {
+          width: 100%;
+          margin-top: 30px;
+          tbody {
+            tr {
+              border-collapse: collapse;
+              td {
+                font: 14px/18px D-DIN-Bold, Arial, Verdana, sans-serif;
+                text-align: left;
+                padding: 20px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+              }
+              .engineTableRow {
+                text-align: right;
+                font: 600 16px/18px D-DIN-Regular, Arial, Verdana, sans-serif;
+                color: #fff;
+                padding: 20px px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                span {
+                  color: #868686;
+                  text-align: right;
+                  font: 600 16px/18px D-DIN-Regular, Arial, Verdana, sans-serif;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Engine Section
+
+// Start Rocket Img Section
+.rocketPhoto {
+  background-image: url(../images/F9_DM2_LAUNCH_3840x2560.jpg);
+  height: 770px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+// End Rocket Img Section
+
+// Start Service Section
+.service {
+  height: 540px;
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+  .container {
+    position: relative;
+    h3 {
+      top: 10%;
+      left: 50%;
+      width: 55%;
+      max-width: 900px;
+      font: 15px/24px D-DIN-Medium, Arial, Verdana, sans-serif;
+      font-weight: 400;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      color: #fff;
+    }
+    .row {
+      margin: 75px auto;
+      display: inline-block;
+      .line {
+        width: 1px;
+        background-color: #fff;
+        height: 140px;
+        margin: 100px auto;
+      }
+      p {
+        max-width: 60%;
+        display: block;
+        margin: 40px auto 0 !important;
+        font: 14px/18px D-DIN-Medium, Arial, Verdana, sans-serif;
+        color: #919191;
+      }
+      .infoBtn {
+        color: #fff;
+      }
+      .serviceBtnBox {
+        .serviceBtn {
+          &:hover {
+            transform: scale3d(1, 1, 1);
+            background-color: #fff;
+            width: 184.03px;
+            height: 50px;
+            transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+            color: #000;
+            transform-origin: bottom center;
+          }
+          margin-right: 10px;
+          margin-left: 10px;
+          padding: 13px 6px;
+          border: 2px solid #fff;
+          font: 14px/50px D-DIN-Bold, Arial, Verdana, sans-serif;
+          color: #fff;
+          text-transform: uppercase;
+          margin-top: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  //  Start Falcon 9 About1 Section
+  .about1 {
+    .container {
+      .row {
+        width: 100%;
+      }
+    }
+  }
+  // End Falcon 9 About1 Section
+
+  // Start Owerview Section
+  .owerview {
+    .container {
+      .row {
+        .owervievLeftSide {
+          table {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+  // End Owerview Section
+
+  // Start Video Section
+  .video {
+    .container {
+      .row {
+        .videoLeftSide {
+          width: 400px;
+        }
+      }
+    }
+  }
+  // End Video Section
+
+  // Start Engine Section
+  .engine {
+    .container {
+      .row {
+        .engineLeftSide {
+          width: 40%;
+        }
+      }
+    }
+  }
+  // End Engine Section
+}
+
+@media (max-width: 560px) {
+  .falcon9 {
+    .row {
+      .pageTitle {
+        width: 60%;
+        h1 {
+          font-size: 50px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  //  Start Falcon 9 About1 Section
+  .about1 {
+    .container {
+      .row {
+        width: 90%;
+        .cardBox {
+          width: 100%;
+          .card {
+            .number {
+              font-size: 50px;
+            }
+            .cardInfo {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //  End Falcon 9 About1 Section
+  // Start Falcon 9 About2 Section
+  .about2 {
+    height: 500px;
+    .container {
+      .row {
+        .leftSide {
+          max-width: 447px;
+          margin-top: 120px;
+          margin-left: 79px;
+          .leftSideInfo {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  // End Falcon 9 About2 Section
+  // Start Owerview Section
+  .owerview {
+    .container {
+      .row {
+        .owervievLeftSide {
+          margin-top: 549px;
+          table {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  // End Owerview Section
+  // Start Video Section
+  .video {
+    .container {
+      .row {
+        .videoLeftSide {
+          display: none;
+        }
+      }
+    }
+  }
+  // End Video Section
+  // Start Engine Section
+  .engine {
+    .container {
+      .row {
+        .engineLeftSide {
+          table {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  // End Engine Section
+
+  // Start Service Section
+  .service {
+    height: 700px;
+    .container {
+      .row {
+        .serviceBtnBox {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          a {
+            padding: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
