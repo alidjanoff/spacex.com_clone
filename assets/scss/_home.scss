@@ -1,8 +1,8 @@
-.flight-test,
-.americas-mission,
-.starlink-mission,
-.return-earth,
-.starship-selected {
+.recent-flight-test,
+.upcoming-americas-mission,
+.upcoming-starlink-mission,
+.completed-mission,
+.newera {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -91,19 +91,19 @@
     }
   }
 }
-.flight-test {
+.recent-flight-test {
   background-image: url(../images/home/home_bg.jpeg);
 }
-.americas-mission {
+.upcoming-americas-mission {
   background-image: url(../images/home/americas-bg.jpg);
 }
-.starlink-mission {
+.upcoming-starlink-mission {
   background-image: url(../images/home/starlink-mission-bg.jpg);
 }
-.return-earth {
+.completed-mission {
   background-image: url(../images/home/return-earth-bg.png);
 }
-.starship-selected {
+.newera {
   background-image: url(../images/home//starship-select-bg.webp);
 }
 @keyframes move {
@@ -122,11 +122,11 @@
 }
 // * Start Home Medias
 @media (max-width: 1354px) {
-  .flight-test,
-  .americas-mission,
-  .starlink-mission,
-  .return-earth,
-  .starship-selected {
+  .recent-flight-test,
+  .upcoming-americas-mission,
+  .upcoming-starlink-mission,
+  .completed-mission,
+  .newera {
     .container {
       margin-left: 50px;
     }
@@ -134,11 +134,11 @@
 }
 
 @media (max-width: 1205px) {
-  .flight-test,
-  .americas-mission,
-  .starlink-mission,
-  .return-earth,
-  .starship-selected {
+  .recent-flight-test,
+  .upcoming-americas-mission,
+  .upcoming-starlink-mission,
+  .completed-mission,
+  .newera {
     .container {
       .row {
         .info {
@@ -150,11 +150,11 @@
 }
 
 @media (max-width: 960px) {
-  .flight-test,
-  .americas-mission,
-  .starlink-mission,
-  .return-earth,
-  .starship-selected {
+  .recent-flight-test,
+  .upcoming-americas-mission,
+  .upcoming-starlink-mission,
+  .completed-mission,
+  .newera {
     .container {
       margin: 0 auto;
       .row {
@@ -167,11 +167,11 @@
 }
 
 @media (max-width: 350px) {
-  .flight-test,
-  .americas-mission,
-  .starlink-mission,
-  .return-earth,
-  .starship-selected {
+  .recent-flight-test,
+  .upcoming-americas-mission,
+  .upcoming-starlink-mission,
+  .completed-mission,
+  .newera {
     .container {
       .row {
         .info {
