@@ -397,6 +397,54 @@
   font-style: normal;
 }
 
+.overview {
+  height: 746px;
+  background-image: url(../images/WebsiteStarship_Render_Desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overview .row {
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+}
+.overview .row .aboutOverview {
+  width: 35%;
+}
+.overview .row .aboutOverview .titleOverview h2 {
+  color: white;
+  font-weight: 400;
+  margin-right: 52px;
+  font-size: 48px;
+  line-height: 48px;
+  font-family: "D-DIN-Bold";
+}
+.overview .row .aboutOverview .titleOverview p {
+  margin: 20px 0 15px;
+  color: white;
+}
+.overview .row .aboutOverview table tr td {
+  color: white;
+}
+
+.video {
+  background-image: url(../images/STARSHIP_CAPABILITIES_StarshipAnimation_Desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 746px;
+}
+.video .row .icon {
+  height: 746px;
+  margin-top: 373px;
+  margin-left: 844px;
+}
+.video .row .icon i {
+  font-size: 50px;
+  color: white;
+}
+
 .starshield .row {
   width: 100%;
   height: 850px;
